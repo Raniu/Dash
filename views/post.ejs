@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <!-- <meta http-equiv="x-ua-xompatible" content="ie=edge"> -->
+
+    <title>Kuls_ICT</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/img/favicon.png" rel="icon">
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="/kuls/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/kuls/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/kuls/icofont/icofont.min.css" rel="stylesheet">
+    <link href="/kuls/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/kuls/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/kuls/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/kuls/venobox/venobox.css" rel="stylesheet">
+    <!-- <link href="assets/kuls/aos/aos.css" rel="stylesheet"> -->
+    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- <link href="https://cdn.rawgit.com/westonganger/bootstrap-directional-buttons/master/dist/bootstrap-directional-buttons.css" rel="stylesheet" type="text/css" /> -->
+</head>
+<body>
+    <main id="main">
+        <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/ICT/index.html">
+                <div class="sidebar-brand-icon">
+                    <img src="/img/kuls_logo.png" alt="">
+                </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <div class="bright">
+                    <a class="nav-link" href="#">
+                        <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                        <span>Home</span>
+                    </a>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                게시판
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <div class="bright">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <span>게시글 작성</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="#">게시판 관리</a>
+                        <a class="collapse-item" href="#">수정</a>
+                    </div>
+                </div>
+                </div>
+
+            </li>
+            <hr class="sidebar-divider">
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+            <div class="container-fluid">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>글 추가</h2>
+                </div>
+                <div class="row">
+                <div class="col-lg-12 text-center">
+                    <center>
+                        <form action="/board/post" method="post">
+                            <table class="table2">
+                                <tr>
+                                    <td>작성자</td>
+                                    <td><input type="text" name="name" id="name" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>제목</td>
+                                    <td><input type="text" name="title" id="title" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td><textarea name="content" id="content" cols="30" rows="10" required></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>패스워드</td>
+                                    <td><input type="password" name="passwd" id="passwd" required/></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit">글쓰기</button>
+                                        <a href="/board">돌아가기</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </center>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- End of Main Content -->
+    </div>
+  </main>
+
+
+ 
+ 
+</body>
+</html>
+
